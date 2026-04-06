@@ -1,0 +1,298 @@
+1-The site has an administrator who manages the creation, maintenance and deletion of teaching modules and their association with one or more referent teachers.
+
+T1-The administrator can create teaching modules
+T1-The administrator can update teaching modules
+T1-The administrator can delete teaching modules
+T1-The administrator can associate one or more referent teachers with a teaching module
+
+T2-The administrator can create teaching modules
+T2-The administrator can update teaching modules
+T2-The administrator can delete teaching modules
+T2-The administrator can assign one or more referent teachers to a teaching module
+
+T3-The administrator can create teaching modules
+T3-The administrator can update teaching modules
+T3-The administrator can delete teaching modules
+T3-The administrator can assign one or more referent teachers to a teaching module
+
+T4-The administrator can create a teaching module
+T4-The administrator can update a teaching module
+T4-The administrator can delete a teaching module
+T4-The administrator can associate one or more referent teachers with a teaching module
+
+T5-The administrator can create a teaching module
+T5-The administrator can update a teaching module
+T5-The administrator can delete a teaching module
+T5-The administrator can associate one or more referent teachers with a teaching module
+
+T6-The administrator can create a teaching module
+T6-The administrator can modify a teaching module
+T6-The administrator can delete a teaching module
+T6-The administrator can associate one or more referent teachers to a teaching module
+
+T7-The administrator can create teaching modules
+T7-The administrator can update teaching modules
+T7-The administrator can delete teaching modules
+T7-The administrator can associate one or more referent teachers to a teaching module
+
+T8-The administrator can create a teaching module
+T8-The administrator can update a teaching module
+T8-The administrator can delete a teaching module
+T8-The administrator can assign one or more referent teachers to a teaching module
+
+T9-The administrator can create a teaching module
+T9-The administrator can update a teaching module
+T9-The administrator can delete a teaching module
+T9-The administrator can associate one or more referent teachers with a teaching module
+
+T10-The administrator can create a teaching module
+T10-The administrator can update a teaching module
+T10-The administrator can delete a teaching module
+T10-The administrator can assign one or more referent teachers to a teaching module
+
+---------------------------
+2-Teachers and students are grouped together in a global database also managed by the administrator. 
+
+T1-The administrator can manage a global database of teachers
+T1-The administrator can manage a global database of students
+
+T2-The administrator can create teacher records in the global database
+T2-The administrator can update teacher records in the global database
+T2-The administrator can delete teacher records from the global database
+
+T3-The administrator can create teacher records in the global database
+T3-The administrator can update teacher records in the global database
+T3-The administrator can delete teacher records from the global database
+
+T4-The administrator can add a teacher to the global database
+T4-The administrator can update a teacher in the global database
+T4-The administrator can delete a teacher from the global database
+
+T5-The administrator can create a teacher in the global database
+T5-The administrator can update a teacher in the global database
+T5-The administrator can delete a teacher from the global database
+
+T5-The administrator can create a student in the global database
+T5-The administrator can update a student in the global database
+T5-The administrator can delete a student from the global database
+
+T6-The administrator can add a teacher to the global database
+T6-The administrator can modify a teacher in the global database
+T6-The administrator can remove a teacher from the global database
+T6-The administrator can add a student to the global database
+T6-The administrator can modify a student in the global database
+T6-The administrator can remove a student from the global database
+
+T7-The administrator can manage a global database of teachers
+T7-The administrator can manage a global database of students
+
+T8-The administrator can add a teacher to the global database
+T8-The administrator can update a teacher in the global database
+T8-The administrator can delete a teacher from the global database
+T8-The administrator can add a student to the global database
+T8-The administrator can update a student in the global database
+T8-The administrator can delete a student from the global database
+
+T9-The administrator can add a teacher to the global database
+T9-The administrator can update a teacher in the global database
+T9-The administrator can delete a teacher from the global database
+T9-The administrator can add a student to the global database
+T9-The administrator can update a student in the global database
+T9-The administrator can delete a student from the global database
+
+T10-The administrator can add a teacher to the global database
+T10-The administrator can update a teacher in the global database
+T10-The administrator can delete a teacher from the global database
+T10-The administrator can add a student to the global database
+T10-The administrator can update a student in the global database
+T10-The administrator can delete a student from the global database
+
+
+--------------------------- 
+3-The referent teacher can add teachers and students if they are already registered in the database. 
+
+T1-The referent teacher can add teachers to a module if they are already registered in the database
+T1-The referent teacher can add students to a module if they are already registered in the database
+
+T2-The referent teacher can assign existing teachers from the database to a module
+T2-The referent teacher can assign existing students from the database to a module
+
+T3-The referent teacher can add existing teachers from the global database to a teaching module
+T3-The referent teacher can add existing students from the global database to a teaching module
+
+T4-The referent teacher can add a teacher from the global database to a teaching module
+T4-The referent teacher can add a student from the global database to a teaching module
+
+T5-The referent teacher can assign a teacher from the global database to a teaching module
+T5-The referent teacher can assign a student from the global database to a teaching module
+T5-The referent teacher can assign a teacher from the global database to a teaching module
+T5-The referent teacher can assign a student from the global database to a teaching module
+
+T6-The referent teacher can add a teacher from the global database to a teaching module
+T6-The referent teacher can add a student from the global database to a teaching module
+
+T7-The referent teacher can add teachers to a module if they are already registered in the database
+T7-The referent teacher can add students to a module if they are already registered in the database
+
+T8-The referent teacher can add a registered teacher to a teaching module
+T8-The referent teacher can add a registered student to a teaching module
+
+T9-The referent teacher can add a registered teacher to a teaching module
+T9-The referent teacher can add a registered student to a teaching module
+
+T10-The referent teacher can add a teacher to a teaching module if the teacher exists in the global database
+T10-The referent teacher can add a student to a teaching module if the student exists in the global database
+
+---------------------------
+4-When a teacher reports an absence in a module, they can add a comment. 
+
+T1-The teacher can report an absence for a student in a module
+T1-The teacher can add a comment when reporting an absence
+
+
+T2-The teacher can record a student absence in a module
+T2-The teacher can add a comment to a recorded absence
+T2-The teacher can view absences of students enrolled in their modules
+T2-The administrative staff can enter a justification for a student absence
+
+T3-The teacher can record an absence for a student in a teaching module
+T3-The teacher can add a comment to an absence record
+
+T4-The teacher can record a student absence in a teaching module
+T4-The teacher can add a comment to a recorded absence
+
+T5-The teacher can record an absence for a student in a teaching module
+T5-The teacher can add a comment to an absence
+
+T6-The teacher can record an absence for a student in a teaching module
+T6-The teacher can add a comment when recording an absence
+
+T7-The teacher can record an absence for a student in a module
+T7-The teacher can add a comment when recording an absence
+
+T8-The teacher can record a student absence in a teaching module
+T8-The teacher can add a comment to a recorded absence
+
+T9-The teacher can record an absence for a student in a teaching module
+T9-The teacher can add a comment to an absence record
+
+T10-The teacher can record an absence for a student in a teaching module
+T10-The teacher can associate a comment with a recorded absence
+
+---------------------------
+5-A teacher can consult the list of absences for all students enrolled in one of their modules. 
+
+T1-The teacher can view the list of absences for all students enrolled in their modules
+
+T2-The administrative staff can view all recorded student absences
+
+T3-The teacher can view the list of absences for students enrolled in their teaching modules
+
+T4-The teacher can view absences of students enrolled in their teaching modules
+
+T5-The teacher can view absences of students in their teaching modules
+
+T6-The teacher can view the list of absences for students in their teaching modules
+
+T7-The teacher can consult the list of absences for students enrolled in their modules
+
+T8-The teacher can view absences of students enrolled in their teaching modules
+
+T9-The teacher can view the list of absences for students enrolled in their teaching modules
+
+T10-The teacher can view absences of students enrolled in their teaching modules
+
+---------------------------
+The administrative staff then enters the reason for the absence and has access to all student absences. 
+
+T1-The administrative staff can enter the reason for a student absence
+T1-The administrative staff can view all student absences
+
+T2-null
+
+T3-The administrative staff can record the justification for a student absence
+T3-The administrative staff can view all student absences
+
+T4-The administrative staff can record a justification for a student absence
+T4-The administrative staff can view all student absences
+
+T5-The administrative staff can enter a reason for an absence
+T5-The administrative staff can view all student absences
+
+T6-The administrative staff can enter a justification for a student absence
+T6-The administrative staff can access all student absences
+
+T7-The administrative staff can access all student absences
+T7-The administrative staff can enter a reason for a student’s absence
+
+T8-The administrative staff can view all student absences
+T8-The administrative staff can record a justification for a student absence
+
+T9-The administrative staff can view all student absences
+T9-The administrative staff can enter a justification for a student absence
+
+T10-The administrative staff can view all recorded student absences
+T10-The administrative staff can assign a justification to a recorded absence
+
+---------------------------
+Absences can be grouped by module and by student. 
+
+T1-The system can group absences by module
+T1-The system can group absences by student
+
+T2-The system can display absences grouped by module
+T2-The system can display absences grouped by student
+
+T3-The system can display absences grouped by teaching module
+T3-The system can display absences grouped by student
+
+T4-The system can group absences by teaching module
+T4-The system can group absences by student
+
+T5-The system can group absences by teaching module
+T5-The system can group absences by student
+
+T6-The system can display absences grouped by teaching module
+T6-The system can display absences grouped by student
+
+T7-The system can group absences by module
+T7-The system can group absences by student
+
+T8-The system can group absences by teaching module
+T8-The system can group absences by student
+
+T9-The system can group absences by teaching module
+T9-The system can group absences by student
+
+T10-The system can group absences by teaching module
+T10-The system can group absences by student
+---------------------------
+In addition, a page alerts teaching staff to students with more than 3 unjustified absences.
+
+T1-The system can alert teaching staff to students with more than three unjustified absences
+
+T2-The system can identify students with more than three unjustified absences
+T2-The system can notify teaching staff about students with more than three unjustified absences
+
+T3-The system can identify students with more than three unjustified absences
+T3-The system can display alerts to teaching staff for students with more than three unjustified absences
+
+T4-The system can detect students with more than three unjustified absences
+T4-The system can display alerts for students with more than three unjustified absences
+
+T5-The system can identify students with more than three unjustified absences
+T5-The system can display a list of students with more than three unjustified absences
+
+T6-The system can detect students with more than three unjustified absences
+T6-The system can display an alert page listing students with more than three unjustified absences
+
+T7-The system can alert teaching staff about students with more than three unjustified absences
+
+T8-The system can identify students with more than three unjustified absences
+T8-The system can display an alert page listing students with more than three unjustified absences
+
+T9-The system can identify students with more than three unjustified absences
+T9-The system can display a list of students with more than three unjustified absences
+
+T10-The system can detect students with more than three unjustified absences
+T10-The system can display an alert listing students with more than three unjustified absences
