@@ -56,7 +56,7 @@ The site has an administrator who manages the creation, maintenance and deletion
      Analyze requirements with respect to a specification document and classify it into one of the following categories:
 
      1-It complies with the specification
-     2-It highlights missing information
+     2-It omits required information from the specification
      3-It provides a useful or relevant improvement
      4-It introduces something unnecessary or contradicts the specification
 

@@ -55,66 +55,63 @@ Classification: 1
 
 T1-The administrator can manage a global database of teachers
 T1-The administrator can manage a global database of students
-Classification: 2 — It highlights missing information
-Explanation:
-The specification clearly states that teachers and students are grouped together in a single global database managed by the administrator.
+Classification: 2 — It omits required information from the specification
+Explanation
+The specification clearly states that:
+Teachers and students are grouped together in a global database managed by the administrator.
 However, the requirements say:
-The administrator manages a global database of teachers
-The administrator manages a global database of students
-This suggests two separate databases, rather than one unified database.
-So the requirements do not contradict outright, but they fail to reflect an important aspect of the specification — the fact that both groups should be combined into a single global database.
-Conclusion:
-The requirements reveal a missing or misrepresented detail from the specification, hence category 2.
+The administrator can manage a global database of teachers
+The administrator can manage a global database of students
+These requirements separate teachers and students into two distinct databases, rather than reflecting a single unified (global) database as specified.
+Conclusion
+The requirements miss an important aspect of the specification — the grouping of teachers and students into one shared database — and therefore omit required information.
 
 T2-The administrator can create teacher records in the global database
 T2-The administrator can update teacher records in the global database
 T2-The administrator can delete teacher records from the global database
+**Classification: 2 — It omits required information from the specification**
+### Explanation:
+The specification clearly states that **both teachers and students are grouped together in a global database** managed by the administrator.
+However, the requirements only describe actions related to **teacher records**:
+* Create teacher records
+* Update teacher records
+* Delete teacher records
+There is **no mention of student records**, which are explicitly part of the specification. Therefore, the requirements are **incomplete**, as they omit a key element (student management).
+### Conclusion:
+The requirements partially reflect the specification but **fail to cover all required entities**, so the correct classification is:
+👉 **2 — It omits required information from the specification**
 
-Classification: 2 — It highlights missing information
-Why:
-The specification states that teachers and students are grouped together in a global database managed by the administrator.
-However, the requirements only describe actions related to teachers (create, update, delete), and say nothing about students.
-What’s missing:
-No requirements for managing student records (create/update/delete)
-No clarification on whether teachers and students share the same structure or are handled differently within the database
-No mention of how the “grouping together” is implemented or used
 
 T3-The administrator can create teacher records in the global database
 T3-The administrator can update teacher records in the global database
 T3-The administrator can delete teacher records from the global database
 
-**Classification: 4 — It introduces something unnecessary or contradicts the specification**
-### Explanation:
-The specification clearly states that **teachers and students are grouped together in a global database**. This implies a **unified data model** or at least no strict separation in how they are managed.
-However, the requirements focus **only on teacher records**:
-* create teacher records
-* update teacher records
-* delete teacher records
-This introduces a **partial and asymmetric handling**, since:
-* There is **no mention of students**, despite them being part of the same global database.
-* It suggests a **separate management logic for teachers**, which may contradict the idea of a *grouped/shared structure*.
-### Why this is an issue:
-* It risks **inconsistency in CRUD operations** between teachers and students.
-* It may imply **design divergence** (separate entities or workflows) not aligned with the specification.
-* At minimum, it is **incomplete relative to the stated scope**.
-### What would align better:
-Either:
-* Generalize: *“The administrator can manage records in the global database”*
-  or
-* Symmetrize: include the same operations for **students** as well.
-So, as written, the requirement introduces a **misalignment with the specification**, hence category **4**.
+**Classification: 2 — It omits required information from the specification**
+### Explanation
+The specification clearly states that **both teachers and students are grouped together in a global database** managed by the administrator.
+However, the requirements only mention actions related to **teacher records**:
+* Create teacher records
+* Update teacher records
+* Delete teacher records
+### What's missing
+There is **no mention of student records**, which are explicitly part of the specification. The requirements should also include similar operations for students (e.g., create, update, delete student records).
+### Conclusion
+The requirements are **incomplete** because they fail to cover all entities defined in the specification → hence **category 2**.
 
 
 T4-The administrator can add a teacher to the global database
 T4-The administrator can update a teacher in the global database
 T4-The administrator can delete a teacher from the global database
-**Classification: 2 — It highlights missing information**
-The specification states that **teachers and students are grouped together in a global database**, but the requirements only address **teacher records**.
-What’s missing:
-* No mention of **student records** (add/update/delete)
-* No clarification whether teachers and students share the same structure or are managed differently
-* No indication if similar operations should apply to both groups
-So, the requirements are **incomplete relative to the specification**, as they cover only part of the intended scope.
+**Classification: 2 — It omits required information from the specification**
+### Explanation:
+The specification clearly states that **both teachers and students** are grouped together in a global database managed by the administrator.
+However, the requirements only mention actions related to **teacher records**:
+* Create teacher records
+* Update teacher records
+* Delete teacher records
+There is **no mention of student records**, which are explicitly part of the specification.
+### Conclusion:
+The requirements are **incomplete**, as they omit operations related to **students**, which are required by the specification.
 
 
 T5-The administrator can create a teacher in the global database
@@ -123,15 +120,15 @@ T5-The administrator can delete a teacher from the global database
 T5-The administrator can create a student in the global database
 T5-The administrator can update a student in the global database
 T5-The administrator can delete a student from the global database
-**Classification: 3 — It provides a useful or relevant improvement**
+**Classification: 1 — It complies with the specification**
 **Explanation:**
-The specification states that teachers and students are grouped in a global database managed by the administrator, but it does not explicitly describe what actions the administrator can perform.
-The requirements add concrete functionalities (create, update, delete teacher records), which:
-* Clarify the administrator’s role
-* Make the specification more operational and testable
-* Are consistent with the idea of managing a database
-They do not contradict the specification and do not expose missing information—they extend it in a meaningful way.
-So, this is a **useful refinement/improvement**, not just compliance.
+The specification states that teachers and students are grouped in a global database managed by the administrator.
+All listed requirements:
+* Cover both **teachers and students**
+* Include **create, update, and delete operations**
+* Clearly assign these actions to the **administrator**
+* Explicitly reference the **global database**
+There is no missing required element, no contradiction, and no unnecessary addition. The requirements fully and correctly reflect the specification.
 
 
 T6-The administrator can add a teacher to the global database
@@ -147,15 +144,12 @@ The requirements are fully consistent with the specification:
 * These operations are standard CRUD actions (Create, Read/Update, Delete) and directly support managing such a database.
 There is no contradiction, missing element, or unnecessary addition relative to the specification.
 
-
 T7-The administrator can manage a global database of teachers
 T7-The administrator can manage a global database of students
-Classification: 2 — It highlights missing information
-The requirements split the database into two separate parts (teachers and students), whereas the specification clearly states that teachers and students are grouped together in a single global database.
-So these requirements suggest an incomplete interpretation of the specification:
-They omit the idea of a unified database
-They do not explicitly state that both teachers and students are managed together
-In other words, they miss an important aspect of the specification, rather than fully complying with it
+**Classification: 2 — It omits required information from the specification**
+**Explanation:**
+The specification explicitly states that *teachers and students are grouped together in a single global database*. However, the requirements describe **two separate databases** (one for teachers and one for students) without mentioning any grouping or unified structure.
+So the key concept of a **shared/global combined database** is missing — hence, the requirements **omit required information** from the specification.
 
 T8-The administrator can add a teacher to the global database
 T8-The administrator can update a teacher in the global database
@@ -249,71 +243,61 @@ Classification 1
 
 T1-The teacher can report an absence for a student in a module
 T1-The teacher can add a comment when reporting an absence
-**Classification: 2 — It highlights missing information**
-The specification only states that *when a teacher reports an absence, they can add a comment*, but it does **not explicitly specify the ability to report an absence itself**.
-* The requirement *“The teacher can report an absence for a student in a module”* exposes this gap → **missing core functionality in the specification**.
-* The second requirement (*adding a comment*) is aligned with the spec, but it does not change the overall classification.
-👉 Therefore, the set of requirements reveals that the specification is incomplete.
-
+Classification 1
 
 T2-The teacher can record a student absence in a module
 T2-The teacher can add a comment to a recorded absence
 T2-The teacher can view absences of students enrolled in their modules
 T2-The administrative staff can enter a justification for a student absence
-### 🔍 **Requirement Analysis**
+Classification 3
+Here’s a clear analysis of each requirement against the specification:
+---
+### 🔹 Specification
+> When a teacher reports an absence in a module, they can add a comment.
+---
+### 🔍 Requirements Classification
 1. **“The teacher can record a student absence in a module”**
-   👉 **Category: 1 – Complies with the specification**
-* This is implicitly required: a teacher must be able to report an absence before adding a comment.
+   ➡️ **Category 1 – Complies with the specification**
+   This is a necessary prerequisite to reporting an absence.
+---
 2. **“The teacher can add a comment to a recorded absence”**
-   👉 **Category: 1 – Complies with the specification**
-* This directly matches the specification.
+   ➡️ **Category 1 – Complies with the specification**
+   This directly reflects the core requirement stated in the specification.
+---
 3. **“The teacher can view absences of students enrolled in their modules”**
-   👉 **Category: 3 – Provides a useful or relevant improvement**
-* Not explicitly required by the specification.
-* However, it is a logical and useful extension (consultation feature).
+   ➡️ **Category 3 – Provides a useful or relevant improvement**
+   Not explicitly required, but logically useful for managing absences.
+---
 4. **“The administrative staff can enter a justification for a student absence”**
-   👉 **Category: 3 – Provides a useful or relevant improvement**
-* Introduces a new role (administrative staff).
-* Adds functionality (justification) not mentioned in the spec, but relevant in real-world systems.
-### ✅ **Summary**
-| Requirement         | Classification  |
-| ------------------- | --------------- |
-| Record absence      | 1 – Complies    |
-| Add comment         | 1 – Complies    |
-| View absences       | 3 – Improvement |
-| Admin justification | 3 – Improvement |
-If you want, I can also show how to detect contradictions or missing requirements in similar exercises 👍
-
+   ➡️ **Category 3 – Provides a useful or relevant improvement**
+   Extends functionality beyond the specification, but remains relevant and coherent.
+---
+### ✅ Final Summary
+| Requirement         | Category |
+| ------------------- | -------- |
+| Record absence      | 1        |
+| Add comment         | 1        |
+| View absences       | 3        |
+| Admin justification | 3        |
 
 T3-The teacher can record an absence for a student in a teaching module
 T3-The teacher can add a comment to an absence record
-Classification 1
+Classification: 3 — It provides a useful or relevant improvement
+Explanation:
+The specification only states that when a teacher reports an absence, they can add a comment.
+The requirements include:
+The ability to record an absence (which is implicitly assumed but not explicitly stated in the specification)
+The ability to add a comment (which directly matches the specification)
+By explicitly stating that a teacher can record an absence, the requirement clarifies and extends the specification in a meaningful way. It does not contradict anything, nor does it omit required information.
+So this is a useful enhancement/clarification, not an error.
 
 T4-The teacher can record a student absence in a teaching module
 T4-The teacher can add a comment to a recorded absence
-**Classification: 4 — It introduces something unnecessary or contradicts the specification**
-**Explanation:**
-* The **specification** clearly states: *a teacher reports **their own absence** in a module and can add a comment*.
-* The **requirements**, however:
-  * Introduce a **different concept**: *student absence* (not teacher absence)
-  * Shift the scope from **teacher absence reporting** to **student attendance tracking**
-👉 This is not just an extension—it **changes the subject entirely**, which makes it **inconsistent with the specification**.
-* The second requirement (*adding a comment*) aligns structurally with the spec, but since it is attached to the wrong concept (student absence instead of teacher absence), it is still part of the mismatch.
-**Conclusion:** The requirements contradict the specification by introducing a different domain (student absence), so the correct classification is **4**.
-
+Classification 1
 
 T5-The teacher can record an absence for a student in a teaching module
 T5-The teacher can add a comment to an absence
-* **Requirement 1:** *“The teacher can record an absence for a student in a teaching module”*
-  → **Category 3: It provides a useful or relevant improvement**
-  This is not explicitly stated in the specification, but it is a logical prerequisite. It clarifies how the absence is actually created.
-* **Requirement 2:** *“The teacher can add a comment to an absence”*
-  → **Category 1: It complies with the specification**
-  This directly matches the specification, which explicitly mentions adding a comment when reporting an absence.
-**Summary:**
-* Req 1 → Useful improvement (3)
-* Req 2 → Complies with specification (1)
-
+Classification 1
 
 T6-The teacher can record an absence for a student in a teaching module
 T6-The teacher can add a comment when recording an absence
@@ -321,7 +305,13 @@ Classification 1
 
 T7-The teacher can record an absence for a student in a module
 T7-The teacher can add a comment when recording an absence
-Classification 1
+Classification: 3 — It provides a useful or relevant improvement
+Explanation:
+The specification only states that when a teacher reports an absence, they can add a comment.
+The requirements include:
+The ability to record an absence (which is implicitly necessary but not explicitly stated in the specification).
+The ability to add a comment when recording an absence (which aligns with the specification).
+Including the ability to record an absence makes the requirement more complete and usable, even though it is not explicitly mentioned in the specification. Therefore, it is a relevant improvement, not an omission or contradiction.
 
 T8-The teacher can record a student absence in a teaching module
 T8-The teacher can add a comment to a recorded absence
@@ -390,7 +380,12 @@ Classification 1
 T2-null
 2 – It highlights missing information
 Explanation:
-The specification describes what the administrative staff can do (enter reasons for absence and access all student absences). However, the “requirement” is null, meaning no requirement has been provided. This clearly indicates missing information, since there is nothing to evaluate against the specification.
+Classification: 2 — It omits required information from the specification
+The requirement is null, meaning it does not include any of the elements described in the specification.
+However, the specification clearly requires:
+Entry of the reason for the absence by administrative staff
+Access to all student absences
+Since none of this information appears in the requirement, it is missing required content and therefore falls into category 2.
 
 T3-The administrative staff can record the justification for a student absence
 T3-The administrative staff can view all student absences
