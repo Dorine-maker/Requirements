@@ -96,8 +96,15 @@ The site has an administrator who manages the creation, maintenance and deletion
 * Les tests sont identifiés (T1, T2…) pour la traçabilité.
 
 ---
+## 6. Data Processing
 
-## 6. Objectifs scientifiques
+Starting from the raw data, 
+the data processing files and programs are provided in the Evaluations folder.
+The results from the two human evaluators were first compared using the Excel files human1.ods and human2.ods.
+Subsequently, more reliable analyses were conducted using the provided Python program, 
+particularly including the calculation of kappa coefficients.
+
+## 7. Objectifs scientifiques
 
 * Évaluer la capacité des LLM à extraire des exigences fonctionnelles précises et testables.
 * Mesurer la cohérence et la conformité des exigences par d’autres LLM.

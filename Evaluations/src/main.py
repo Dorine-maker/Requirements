@@ -27,9 +27,9 @@ def main():
     
     aligned = align_raters(
     {
-        "human_1": "src/data/AFADL_EXP_ACH.csv",
-        "human_2": "src/data/AFADL_EXP_DTA.csv",
-        "llm_rater": "src/data/AFADL_EXP_GPT.csv",
+        "human_1": "data/AFADL_EXP_ACH.csv",
+        "human_2": "data/AFADL_EXP_DTA.csv",
+        "llm_rater": "data/AFADL_EXP_GPT.csv",
     },
     delimiter=";",
     has_header=True,

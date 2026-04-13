@@ -164,6 +164,7 @@ def parse_annotation_csv(
                     validate=validate,
                     line_number=line_number,
                 )
+                print(f"Parsed record from line specification {record.key.specification}, trial {record.key.trial}: class {record.cls}")
                 records.append(record)
 
         else:
