@@ -96,13 +96,11 @@ The site has an administrator who manages the creation, maintenance and deletion
 * Les tests sont identifiés (T1, T2…) pour la traçabilité.
 
 ---
-## 6. Data Processing
+6. Traitement des données
 
-Starting from the raw data, 
-the data processing files and programs are provided in the Evaluations folder.
-The results from the two human evaluators were first compared using the Excel files human1.ods and human2.ods.
-Subsequently, more reliable analyses were conducted using the provided Python program, 
-particularly including the calculation of kappa coefficients.
+À partir des données brutes, les fichiers et les programmes de traitement des données sont fournis dans le dossier Evaluations.
+Les résultats des deux évaluateurs humains ont d’abord été comparés à l’aide des fichiers Excel human1.ods et human2.ods.
+Ensuite, des analyses plus fiables ont été réalisées à l’aide du programme Python fourni, notamment avec le calcul des coefficients de kappa.
 
 ## 7. Objectifs scientifiques
 
